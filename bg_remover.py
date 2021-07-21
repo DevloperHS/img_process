@@ -23,6 +23,8 @@ def bg_remover(inp_img_path, img_name):
     change_bg.load_pascalvoc_model('deeplabv3_xception_tf_dim_ordering_tf_kernels.h5')
     output = change_bg.color_bg(image_path=inp_img_path, colors = (0,0,0) ,output_image_name=img_name+"bg_remove.jpeg")
     cv2.imwrite("Created_Images/Bg_Removed/"+img_name+"_bg_remove.jpeg", output)
+    
+# sample check    
 '''
 bg_remover(inp_img_path='Orignal_Images/view2.jpeg', img_name='view2.jpeg')
 bg_remover(inp_img_path='Orignal_Images/view3.jpeg', img_name='view3.jpeg')
