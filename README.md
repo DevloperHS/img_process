@@ -20,10 +20,14 @@ Load Dependency
 import cv2
 from bg_remover import bg_remover # import bg_remover
 from bg_changer import bg_changer # import bg_changer
+from load_fastest import load_files
+
+# load files
+load_files('path = Orignal_Images') 
 
 # set path
 orig_img_path = 'Orignal_Images/view2.jpeg' # path to orignal image
-bg_img_path = 'Background_Images/pic_3.jpeg'  path to background image
+bgr_img_path = 'Background_Images/pic_3.jpeg'  path to background image
 ```
 * Note currently the function can hold a single path for both parameters
 
@@ -35,4 +39,19 @@ bg_img_path = 'Background_Images/pic_3.jpeg'  path to background image
 * for more control over back ground change the ```colors = (0,0,0)``` parameter of **bg_remover.py** file
 
 ```
-for changing background
+# for changing background
+bg_changer(inp_img_path=orig_img_path, bg_img_path= bgr_img_path, img_name='file_2.jpeg') 
+```
+* Output can be found in **Created_Images/Bg_Changed**
+
+If you have suggestion feel free to let me know and for changes use pull request
+
+Sample Files
+Orignal Image:
+![Orignal Image](https://user-images.githubusercontent.com/74095712/126471194-1caed3ae-5e17-43d1-b507-29d18a2a8e9a.jpeg)
+
+Removed Background :
+![Removed Background](https://user-images.githubusercontent.com/74095712/126470803-de216a76-78c7-4df7-8de8-aa0638114d66.jpeg)
+
+Changed background :
+![Changed Background](https://user-images.githubusercontent.com/74095712/126470990-112b8d60-7333-4c7a-bb45-77d4b495a7bb.jpeg)
