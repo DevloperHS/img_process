@@ -29,7 +29,7 @@ bg_img_path = 'Background_Images/pic_3.jpeg'  path to background image
 
  ```
  #for removing background 
- bg_remover(inp_img_path=orig_img_path, img_name='file.jpeg') # image_name - name given to image
+ bg_remover(img_path=orig_img_path, img_name='file.jpeg') # image_name - name given to image
  ```
 * Output can be found in **Created_Images/Bg_Removed**
 * for more control over back ground change the ```colors = (0,0,0)``` parameter of **bg_remover.py** file

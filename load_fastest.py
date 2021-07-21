@@ -30,12 +30,12 @@ def load_files(path):
         img = cv2.imread(f1)
         data.append(img)
     return  data
-'''
 imgs = load_files('Orignal_Images')
-
+print(imgs)
+'''
 for i in imgs:
     cv2.imshow('Loaded Images', i)
     cv2.waitKey(0)
-
+S
 print(imgs)
 '''
