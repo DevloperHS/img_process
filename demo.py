@@ -13,4 +13,4 @@ bgr_img_path = 'Background_Images/pic_3.jpeg '
 
 # use functions
 bg_remover(img_path=orig_img_path, img_name='file.jpeg')
-bg_changer(inp_img_path=orig_img_path, bg_img_pathgr_img_path, img_name='file_2.jpeg')
+bg_changer(inp_img_path=orig_img_path, bg_img_path= bgr_img_path, img_name='file_2.jpeg')
